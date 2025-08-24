@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sachin Wankhede - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9fafc;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* Navbar */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: #004a9f;
+      display: flex;
+      justify-content: center;
+      padding: .8rem;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    /* Hero */
+    header {
+      background: linear-gradient(135deg, #0078d7, #004a9f);
+      color: #fff;
+      text-align: center;
+      padding: 6rem 1rem 4rem;
+    }
+    header h1 { font-size: 3rem; margin-bottom: .5rem; }
+    header p { font-size: 1.3rem; margin-bottom: 1rem; }
+    header .btn {
+      background: #fff;
+      color: #004a9f;
+      padding: .7rem 1.5rem;
+      border-radius: 25px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    header .btn:hover { background: #e6f0ff; }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 5rem auto 2rem;
+    }
+    section { margin-bottom: 3rem; }
+    h2 {
+      text-align: center;
+      color: #0078d7;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+
+    /* Skills */
+    .skills {
+      display: flex; flex-wrap: wrap; justify-content: center;
+    }
+    .skills span {
+      background: #e6f0ff;
+      color: #004a9f;
+      padding: .6rem 1.2rem;
+      border-radius: 20px;
+      margin: .4rem;
+      font-size: .95rem;
+      font-weight: 500;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    /* Experience & Projects Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card h3 { color: #004a9f; margin-bottom: .5rem; }
+    .card p { font-size: .95rem; margin-bottom: .8rem; }
+    .card ul { margin-left: 1.2rem; font-size: .9rem; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #004a9f;
+      color: #fff;
+    }
+    footer a { color: #fff; margin: 0 .5rem; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Sachin Wankhede</h1>
+    <p>Software Developer (.NET)</p>
+    <a href="#contact" class="btn">Contact Me</a>
+  </header>
+
+  <div class="container">
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p style="text-align:center; max-width:800px; margin:auto;">
+        I am a Software Developer with 1.5 years of experience in designing, developing, 
+        and implementing applications using .NET, ASP.NET, Web API, and SQL Server. 
+        Passionate about delivering efficient solutions and improving processes through technology.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>C#</span><span>ASP.NET Core</span><span>Web API</span><span>MVC</span>
+        <span>Entity Framework</span><span>SQL Server</span><span>HTML5</span>
+        <span>CSS3</span><span>Angular</span><span>ADO.NET</span>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Software Developer - Netaid Technologies</h3>
+          <p><em>Oct 2024 – Present | Pune, India</em></p>
+          <ul>
+            <li>Developed RFID-based vehicle access control system (+40% efficiency).</li>
+            <li>Led project lifecycle from conception to delivery.</li>
+            <li>Ensured system performance & security with regular updates.</li>
+            <li>Collaborated with clients to define and deliver solutions.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Software Developer - Enexion Energy</h3>
+          <p><em>Apr 2024 – Sep 2024 | Pune, India</em></p>
+          <ul>
+            <li>Created backend automation services in C#.</li>
+            <li>Built web apps with ASP.NET, Web API, and SQL Server.</li>
+            <li>Resolved complex performance & quality issues.</li>
+            <li>Worked with teams to enhance features.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>RFID Vehicle Access System</h3>
+          <p>Automated vehicle access in restricted areas with secure SQL logging, real-time alerts, and reports.</p>
+        </div>
+        <div class="card">
+          <h3>Energy Market Portal</h3>
+          <p>Real-time energy usage tracking, external API integration, dashboards, and reporting system.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="cards">
+        <div class="card"><h3>CDAC - PG Diploma</h3><p>MET IIT, Mumbai (2023, 62%)</p></div>
+        <div class="card"><h3>M.Sc. Computer Science</h3><p>Bharati Vidyapeeth, Pune (2022, Grade A)</p></div>
+        <div class="card"><h3>B.Sc. Computer Science</h3><p>Bharati Vidyapeeth, Pune (2020, 80%)</p></div>
+        <div class="card"><h3>HSC</h3><p>Maharashtra Board (2017, 63.54%)</p></div>
+        <div class="card"><h3>SSC</h3><p>Maharashtra Board (2015, 84.20%)</p></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p style="text-align:center;">
+        📞 <a href="tel:+919130453372">+91 9130453372</a> |
+        📧 <a href="mailto:sachinwankhede3372@gmail.com">sachinwankhede3372@gmail.com</a> |
+        🔗 <a href="https://www.linkedin.com/in/sachin-wankhede-6996b01b4/" target="_blank">LinkedIn</a>
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Sachin Wankhede | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
